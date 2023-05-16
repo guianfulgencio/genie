@@ -1,0 +1,33 @@
+testbed:
+  name: MyTestbed
+  devices:
+    device1:
+      os: iosxe
+      type: router
+      connections:
+        console:
+          protocol: telnet
+          ip: 192.168.1.1
+        ssh:
+          protocol: ssh
+          ip: 192.168.1.1
+          port: 22
+      credentials:
+        default:
+          username: admin
+          password: secret
+    device2:
+      os: iosxe
+      type: switch
+      connections:
+        console:
+          protocol: telnet
+          ip: 192.168.1.2
+        ssh:
+          protocol: ssh
+          ip: 192.168.1.2
+          port: 22
+      credentials:
+        default:
+          username: admin
+          password: secret
